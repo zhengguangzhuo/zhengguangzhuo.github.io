@@ -4,14 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080b14">
-  <meta name="description" content="zhengguangzhuo——专注 AI 系统、智能体工作流和开发者工具的开发者与开源贡献者。">
+  <meta name="author" content="zhengguangzhuo">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="zhengguangzhuo——专注 AI 系统架构、智能体工程与工业智能应用。">
+  <link rel="canonical" href="https://zhengguangzhuo.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zhengguangzhuo.github.io/">
-  <meta property="og:title" content="zhengguangzhuo——AI 开发者与开源贡献者">
-  <meta property="og:description" content="构建清晰、可靠、真正可使用的 AI 平台、智能体工作流和开发者工具。">
-  <title>zhengguangzhuo——AI 开发者与开源贡献者</title>
+  <meta property="og:site_name" content="zhengguangzhuo">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="zhengguangzhuo — AI 系统架构 · 智能体工程 · 开源">
+  <meta property="og:description" content="把复杂业务，构造成可运行的智能系统。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="zhengguangzhuo — AI 系统架构 · 智能体工程 · 开源">
+  <meta name="twitter:description" content="把复杂业务，构造成可运行的智能系统。">
+  <title>zhengguangzhuo — AI 系统架构 · 智能体工程 · 开源</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260929-4">
+  <link rel="stylesheet" href="styles.css?v=20260929-5">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "zhengguangzhuo",
+      "url": "https://zhengguangzhuo.github.io/",
+      "email": "mailto:1150430503@qq.com",
+      "jobTitle": "AI Systems Architect & Agent Engineer",
+      "sameAs": ["https://github.com/zhengguangzhuo"],
+      "knowsAbout": ["AI systems architecture", "Agent engineering", "Ontology", "Industrial AI", "Open source"]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">跳到主要内容</a>
@@ -21,12 +42,14 @@
         <span class="brand-mark">z</span>
         <span>zhengguangzhuo</span>
       </a>
-      <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="accessibility.navigation">
-        <a href="#about"><span data-i18n="nav.about">关于我</span></a>
-        <a href="#capabilities"><span data-i18n="nav.capabilities">能力</span></a>
+      <button class="nav-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">
+        <span data-i18n="nav.menu">菜单</span>
+        <span aria-hidden="true">+</span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="主导航" data-i18n-aria-label="accessibility.navigation">
         <a href="#projects"><span data-i18n="nav.work">项目</span></a>
-        <a href="#open-source"><span data-i18n="nav.openSource">开源</span></a>
-        <a class="nav-contact" href="#contact"><span data-i18n="nav.contact">联系</span></a>
+        <a href="#systems"><span data-i18n="nav.systems">系统</span></a>
+        <a href="#about"><span data-i18n="nav.about">关于我</span></a>
         <button class="nav-language" type="button" data-language-toggle aria-label="切换为英文" aria-pressed="false">
           <span data-language-label>EN</span><span aria-hidden="true">↗</span>
         </button>
@@ -37,98 +60,115 @@
     <main id="main-content">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <div class="hero-kicker"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.kicker">zhengguangzhuo · AI 开发者 · 开源贡献者</span></div>
-          <p class="eyebrow"><span data-i18n="hero.eyebrowLead">AI 开发者</span> <span>·</span> <span data-i18n="hero.eyebrowTail">系统构建者</span></p>
-          <h1 id="hero-title"><span data-i18n="hero.titleLead">把复杂问题，</span> <em data-i18n="hero.titleAccent">做成可靠系统。</em></h1>
-          <p class="hero-text" data-i18n="hero.text">我构建 AI 平台、智能体工作流和开发者工具，把复杂想法变成可靠、可使用的系统。</p>
+          <div class="hero-kicker"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.kicker">zhengguangzhuo · AI Systems · Agent Engineering</span></div>
+          <p class="eyebrow"><span data-i18n="hero.eyebrowLead">AI 系统架构师</span> <span>·</span> <span data-i18n="hero.eyebrowTail">智能体工程</span></p>
+          <h1 id="hero-title"><span data-i18n="hero.titleLead">把复杂业务，</span> <em data-i18n="hero.titleAccent">构造成可运行的智能系统。</em></h1>
+          <p class="hero-text" data-i18n="hero.text">围绕 AI、智能体、数据与业务语义，设计从模型能力到业务执行的完整系统，让 AI 真正进入生产工作流。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects"><span data-i18n="hero.explore">查看项目</span> <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="#contact"><span data-i18n="hero.contact">联系我</span> <span aria-hidden="true">↗</span></a>
           </div>
           <div class="hero-meta" aria-label="核心能力" data-i18n-aria-label="accessibility.capabilities">
-            <span data-i18n="hero.metaOne">AI 系统</span><span class="meta-dot" aria-hidden="true"></span><span data-i18n="hero.metaTwo">Python · Vue · Agents</span>
+            <span data-i18n="hero.metaOne">AI Systems</span><span class="meta-dot" aria-hidden="true"></span><span data-i18n="hero.metaTwo">Agents · Data · Ontology</span>
           </div>
         </div>
-        <div class="hero-panel" aria-label="当前关注" data-i18n-aria-label="accessibility.currentFocus">
+        <div class="hero-panel system-diagram-panel" aria-label="系统关系图" data-i18n-aria-label="accessibility.systemDiagram">
           <div class="panel-glow" aria-hidden="true"></div>
-          <div class="panel-topline"><span data-i18n="hero.panelLabel">当前关注</span><span>2026</span></div>
-          <h2 data-i18n="hero.panelTitle">让 AI 从演示，走向真正可用。</h2>
-          <ul class="focus-list">
-            <li><span>01</span><strong data-i18n="hero.focusOne">智能体工作流</strong></li>
-            <li><span>02</span><strong data-i18n="hero.focusTwo">数据与工具链</strong></li>
-            <li><span>03</span><strong data-i18n="hero.focusThree">工程质量</strong></li>
-          </ul>
-          <p class="panel-note" data-i18n="hero.panelNote">持续学习，持续交付。</p>
-        </div>
-      </section>
-
-      <section class="positioning-section" aria-labelledby="positioning-title">
-        <p class="eyebrow">01 / <span data-i18n="section.positioningLabel">一句话定位</span></p>
-        <p class="positioning-text" id="positioning-title" data-i18n="positioning.text">用工程化的方法，把 AI 能力变成真实用户愿意使用、团队能够持续维护的系统。</p>
-      </section>
-
-      <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">02 / <span data-i18n="section.aboutLabel">关于我</span></p>
-          <h2 id="about-title" data-i18n="about.title">我关心 AI 如何真正进入工作流。</h2>
-        </div>
-        <div class="about-grid">
-          <p class="about-lead" data-i18n="about.lead">我是一名专注 AI 应用与开发者工具的开发者。</p>
-          <div class="about-copy">
-            <p data-i18n="about.text">从后端 API、数据处理到前端体验，我喜欢把复杂技术拆成清晰的边界，再用测试、文档和开源协作把它交付出去。</p>
-            <p class="about-note" data-i18n="about.note">目前关注：AI 平台 · 智能体工作流 · 工业智能 · 开源维护</p>
+          <div class="panel-topline"><span data-i18n="hero.panelLabel">SYSTEM VIEW</span><span>2026</span></div>
+          <div class="system-diagram" role="img" aria-label="AI 模型、知识、智能体、工具与业务系统之间的关系图" data-i18n-aria-label="accessibility.systemDiagram">
+            <svg class="diagram-lines" viewBox="0 0 400 280" aria-hidden="true" focusable="false">
+              <path class="diagram-line" d="M200 35 V108"></path>
+              <path class="diagram-line" d="M75 105 L168 128"></path>
+              <path class="diagram-line" d="M325 105 L232 128"></path>
+              <path class="diagram-line" d="M105 210 L176 150"></path>
+              <path class="diagram-line" d="M295 210 L224 150"></path>
+              <path class="diagram-line" d="M200 158 V245"></path>
+            </svg>
+            <span class="diagram-node node-model" data-i18n="hero.diagramModel">AI Model</span>
+            <span class="diagram-node node-knowledge" data-i18n="hero.diagramKnowledge">Knowledge</span>
+            <span class="diagram-node node-agent" data-i18n="hero.diagramAgent">Agent</span>
+            <span class="diagram-node node-tools" data-i18n="hero.diagramTools">Tools</span>
+            <span class="diagram-node node-ontology" data-i18n="hero.diagramOntology">Ontology</span>
+            <span class="diagram-node node-data" data-i18n="hero.diagramData">Business Data</span>
+            <span class="diagram-node node-system" data-i18n="hero.diagramSystem">Business System</span>
           </div>
+          <p class="panel-note" data-i18n="hero.panelNote">持续构建，持续验证。</p>
         </div>
       </section>
 
-      <section class="section focus-section capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
-        <div class="section-heading">
-          <p class="eyebrow">03 / <span data-i18n="section.capabilitiesLabel">三项核心能力</span></p>
-          <h2 id="capabilities-title" data-i18n="capabilities.title">从想法、系统到持续交付。</h2>
+      <section class="section engineering-section" id="systems" aria-labelledby="engineering-title">
+        <div class="section-heading section-heading-wide">
+          <div><p class="eyebrow">01 / <span data-i18n="section.engineeringLabel">Engineering at a Glance</span></p><h2 id="engineering-title" data-i18n="engineering.title">从模型能力，到业务执行。</h2></div>
+          <p class="section-intro" data-i18n="engineering.intro">把模型、数据、知识、工具与业务流程组织成一个可执行、可治理、可持续演进的 AI 系统。</p>
         </div>
-        <div class="focus-grid">
-          <article class="focus-card"><span class="card-number">01</span><h3 data-i18n="capabilities.cardOneTitle">AI 系统构建</h3><p data-i18n="capabilities.cardOneText">把模型、数据、工具和业务流程连接成可运行、可理解的 AI 系统。</p></article>
-          <article class="focus-card"><span class="card-number">02</span><h3 data-i18n="capabilities.cardTwoTitle">智能体与数据工具</h3><p data-i18n="capabilities.cardTwoText">围绕 Dify、MCP 和数据库能力，设计清晰的工作流与接口。</p></article>
-          <article class="focus-card"><span class="card-number">03</span><h3 data-i18n="capabilities.cardThreeTitle">工程交付</h3><p data-i18n="capabilities.cardThreeText">用测试、文档、版本控制和部署实践，让项目可以被接手、维护和持续改进。</p></article>
+        <div class="overview-grid">
+          <article class="overview-card"><span class="card-number">01</span><h3 data-i18n="engineering.cardOneTitle">Agent Systems</h3><p data-i18n="engineering.cardOneText">设计 Agent、Workflow、MCP、Tool Calling 与业务动作之间的执行链路。</p><div class="overview-tags"><span>Dify</span><span>MCP</span><span>Workflow</span><span>Tool Calling</span></div></article>
+          <article class="overview-card"><span class="card-number">02</span><h3 data-i18n="engineering.cardTwoTitle">Semantic Systems</h3><p data-i18n="engineering.cardTwoText">使用 Ontology、RDF、SHACL 和知识图谱建立统一业务语义层。</p><div class="overview-tags"><span>Ontology</span><span>RDF</span><span>SHACL</span><span>Knowledge Graph</span></div></article>
+          <article class="overview-card"><span class="card-number">03</span><h3 data-i18n="engineering.cardThreeTitle">AI Infrastructure</h3><p data-i18n="engineering.cardThreeText">构建模型服务、推理网关、OCR 和 AI 服务运行基础设施。</p><div class="overview-tags"><span>vLLM</span><span>Qwen</span><span>DeepSeek</span><span>OCR</span></div></article>
+          <article class="overview-card"><span class="card-number">04</span><h3 data-i18n="engineering.cardFourTitle">Data Systems</h3><p data-i18n="engineering.cardFourText">建设面向 AI 与业务系统的数据访问、流处理与分析能力。</p><div class="overview-tags"><span>Doris</span><span>Kafka</span><span>Flink</span><span>MinIO</span></div></article>
         </div>
       </section>
 
       <section class="section work-section" id="projects" aria-labelledby="work-title">
         <div class="section-heading section-heading-wide">
-          <div><p class="eyebrow">04 / <span data-i18n="section.workLabel">三个代表项目</span></p><h2 id="work-title" data-i18n="work.title">把能力放进真实场景。</h2></div>
-          <p class="section-intro" data-i18n="work.intro">用三个公开项目展示从平台、工具到可视化的实践。</p>
+          <div><p class="eyebrow">02 / <span data-i18n="section.workLabel">SELECTED WORK</span></p><h2 id="work-title" data-i18n="work.title">用真实系统验证技术判断。</h2></div>
+          <p class="section-intro" data-i18n="work.intro">从 AI 平台、智能体工具到数据可视化，持续将架构设计落实为可运行的软件。</p>
         </div>
         <div class="project-grid">
           <a class="project-card" href="https://github.com/zhengguangzhuo/ML-Platform" target="_blank" rel="noreferrer">
-            <div class="project-topline"><span>01</span><span aria-hidden="true">↗</span></div><h3>ML-Platform</h3><p data-i18n="project.mlText">基于 FastAPI 和 Vue 的 AI 平台，覆盖数据集标注、模型训练、评估和图像推理。</p><div class="project-tags"><span>FastAPI</span><span>Vue</span><span data-i18n="tag.aiPlatform">AI 平台</span></div>
+            <div class="project-topline"><span>01</span><span aria-hidden="true">↗</span></div><h3>ML-Platform</h3><p data-i18n="project.mlText">面向 AI 模型全生命周期的工程平台，覆盖数据集管理、标注、训练、评估与推理，采用 FastAPI + Vue 构建前后端能力。</p><p class="project-flow" data-i18n="project.mlFlow">Data → Train → Evaluate → Inference</p><div class="project-tags"><span>FastAPI</span><span>Vue</span><span data-i18n="tag.aiPlatform">AI Platform</span></div>
           </a>
           <a class="project-card" href="https://github.com/zhengguangzhuo/dify-plugin-tools-dbquery" target="_blank" rel="noreferrer">
-            <div class="project-topline"><span>02</span><span aria-hidden="true">↗</span></div><h3 data-i18n="project.dbTitle">数据库查询工具</h3><p data-i18n="project.dbText">面向数据感知型 AI 工作流的 Dify 数据库查询工具。</p><div class="project-tags"><span>Dify</span><span>Python</span><span data-i18n="tag.data">数据</span></div>
+            <div class="project-topline"><span>02</span><span aria-hidden="true">↗</span></div><h3 data-i18n="project.dbTitle">Dify 数据库工具</h3><p data-i18n="project.dbText">面向智能体数据访问场景的数据库工具，为 Dify Workflow / Agent 提供结构化数据查询与业务数据调用能力。</p><div class="project-tags"><span>Dify</span><span>Python</span><span data-i18n="tag.data">Database</span></div>
           </a>
           <a class="project-card" href="https://github.com/zhengguangzhuo/dify-echarts-chart-generator" target="_blank" rel="noreferrer">
-            <div class="project-topline"><span>03</span><span aria-hidden="true">↗</span></div><h3 data-i18n="project.chartTitle">ECharts 图表生成器</h3><p data-i18n="project.chartText">从结构化数据生成经过校验的 Apache ECharts 配置和 HTML 预览。</p><div class="project-tags"><span>Dify</span><span>ECharts</span><span data-i18n="tag.visualization">可视化</span></div>
+            <div class="project-topline"><span>03</span><span aria-hidden="true">↗</span></div><h3 data-i18n="project.chartTitle">ECharts 生成器</h3><p data-i18n="project.chartText">面向 AI 数据分析场景，将结构化结果转换为经过校验的 Apache ECharts 配置与可视化页面。</p><div class="project-tags"><span>Dify</span><span>ECharts</span><span data-i18n="tag.visualization">Visualization</span></div>
           </a>
+        </div>
+      </section>
+
+      <section class="section capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / <span data-i18n="section.capabilitiesLabel">SYSTEM CAPABILITIES</span></p>
+          <h2 id="capabilities-title" data-i18n="capabilities.title">从系统架构，到智能执行。</h2>
+        </div>
+        <div class="capabilities-grid">
+          <article class="focus-card"><span class="card-number">01</span><h3 data-i18n="capabilities.cardOneTitle">AI 系统架构</h3><p data-i18n="capabilities.cardOneText">设计模型、数据、知识、工具与业务系统之间的协作边界，构建可扩展、可治理的 AI 系统架构。</p><div class="capability-tags"><span data-i18n="capabilities.cardOneTagOne">AI Platform</span><span data-i18n="capabilities.cardOneTagTwo">Model Service</span><span data-i18n="capabilities.cardOneTagThree">Integration</span></div></article>
+          <article class="focus-card"><span class="card-number">02</span><h3 data-i18n="capabilities.cardTwoTitle">智能体与语义工程</h3><p data-i18n="capabilities.cardTwoText">围绕 Agent、MCP、Workflow 与 Ontology，将业务知识、数据关系和工具能力组织成可执行的智能任务链。</p><div class="capability-tags"><span data-i18n="capabilities.cardTwoTagOne">Agents</span><span data-i18n="capabilities.cardTwoTagTwo">MCP</span><span data-i18n="capabilities.cardTwoTagThree">Workflow</span><span data-i18n="capabilities.cardTwoTagFour">Ontology</span></div></article>
+          <article class="focus-card"><span class="card-number">03</span><h3 data-i18n="capabilities.cardThreeTitle">工程化交付</h3><p data-i18n="capabilities.cardThreeText">通过 API、测试、部署、监控、版本治理与文档体系，让 AI 能力从原型进入稳定运行的生产环境。</p><div class="capability-tags"><span data-i18n="capabilities.cardThreeTagOne">API</span><span data-i18n="capabilities.cardThreeTagTwo">Test</span><span data-i18n="capabilities.cardThreeTagThree">Deployment</span><span data-i18n="capabilities.cardThreeTagFour">Governance</span></div></article>
+          <article class="focus-card"><span class="card-number">04</span><h3 data-i18n="capabilities.cardFourTitle">数据工程</h3><p data-i18n="capabilities.cardFourText">建设面向 AI 与业务系统的数据访问、流处理与分析能力。</p><div class="capability-tags"><span data-i18n="capabilities.cardFourTagOne">Doris</span><span data-i18n="capabilities.cardFourTagTwo">Kafka</span><span data-i18n="capabilities.cardFourTagThree">Flink</span><span data-i18n="capabilities.cardFourTagFour">MinIO</span></div></article>
         </div>
       </section>
 
       <section class="section open-source-section" id="open-source" aria-labelledby="open-title">
-        <div class="section-heading"><p class="eyebrow">05 / <span data-i18n="section.openSourceLabel">GitHub / 开源贡献</span></p><h2 id="open-title"><span data-i18n="open.titleLead">公开构建，</span><br><em data-i18n="open.titleAccent">共同改进。</em></h2></div>
-        <div class="highlight-card"><p data-i18n="open.text">我通过代码、文档、评审和可维护的工程实践，参与 AI 与开发者工具社区。</p><a href="https://github.com/zhengguangzhuo?tab=overview" target="_blank" rel="noreferrer"><span data-i18n="open.link">查看贡献动态</span> <span aria-hidden="true">↗</span></a></div>
+        <div class="section-heading"><p class="eyebrow">04 / <span data-i18n="section.openSourceLabel">OPEN SOURCE</span></p><h2 id="open-title"><span data-i18n="open.titleLead">公开构建，</span><br><em data-i18n="open.titleAccent">持续演进。</em></h2></div>
+        <div class="highlight-card"><p data-i18n="open.text">通过代码、文档、Issue、评审与工程实践参与开源，也将实际项目中验证过的方法沉淀为可复用的工具与能力。</p><div class="open-source-links"><a href="https://github.com/zhengguangzhuo/ML-Platform" target="_blank" rel="noreferrer"><span data-i18n="open.projectOne">ML-Platform</span> <span aria-hidden="true">↗</span></a><a href="https://github.com/zhengguangzhuo/dify-plugin-tools-dbquery" target="_blank" rel="noreferrer"><span data-i18n="open.projectTwo">Dify Database Tools</span> <span aria-hidden="true">↗</span></a><a href="https://github.com/zhengguangzhuo/dify-echarts-chart-generator" target="_blank" rel="noreferrer"><span data-i18n="open.projectThree">ECharts Generator</span> <span aria-hidden="true">↗</span></a><a href="https://github.com/zhengguangzhuo?tab=overview" target="_blank" rel="noreferrer"><span data-i18n="open.profile">GitHub Profile</span> <span aria-hidden="true">↗</span></a></div></div>
       </section>
 
-      <section class="closing-section contact-section" id="contact" aria-labelledby="closing-title">
-        <p class="eyebrow">06 / <span data-i18n="section.contactLabel">邮箱和社交链接</span></p>
-        <h2 id="closing-title" data-i18n="closing.title">一起把想法变成可用的系统。</h2>
-        <p class="closing-text" data-i18n="closing.text">欢迎通过邮箱或 GitHub 联系我，讨论合作、开源维护和技术交流。</p>
-        <div class="contact-links">
-          <a class="contact-link" href="mailto:1150430503@qq.com"><span class="contact-link-label" data-i18n="contact.emailLabel">邮箱</span><strong>1150430503@qq.com</strong><span aria-hidden="true">↗</span></a>
-          <a class="contact-link" href="https://github.com/zhengguangzhuo" target="_blank" rel="noreferrer"><span class="contact-link-label" data-i18n="contact.githubLabel">GitHub</span><strong>github.com/zhengguangzhuo</strong><span aria-hidden="true">↗</span></a>
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">05 / <span data-i18n="section.aboutLabel">ABOUT</span></p>
+          <h2 id="about-title" data-i18n="about.title">我关注 AI 如何真正进入业务系统。</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead" data-i18n="about.lead">我专注于 AI 系统架构、智能体工程与工业智能应用。</p>
+          <div class="about-copy">
+            <p data-i18n="about.text">工作覆盖模型服务、Agent 工作流、MCP 工具、数据服务、知识与语义建模，以及 AI 与既有业务系统之间的集成。相比单点模型能力，我更关注如何建立清晰的系统边界、可靠的执行链路和可持续演进的工程体系。</p>
+            <p class="about-note" data-i18n="about.note">当前关注：AI Systems · Agent Engineering · Ontology · Industrial AI</p>
+            <div class="about-contact">
+              <p class="eyebrow" data-i18n="about.contactLabel">联系我</p>
+              <div class="contact-links about-contact-links">
+                <a class="contact-link" href="mailto:1150430503@qq.com"><span class="contact-link-label" data-i18n="contact.emailLabel">Email</span><strong>1150430503@qq.com</strong><span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="https://github.com/zhengguangzhuo" target="_blank" rel="noreferrer"><span class="contact-link-label" data-i18n="contact.githubLabel">GitHub</span><strong>github.com/zhengguangzhuo</strong><span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><span data-i18n="footer.copyright">© 2026 zhengguangzhuo</span><span data-i18n="footer.tagline">AI 系统 · 开源 · 可靠工程</span><a href="#top"><span data-i18n="footer.backToTop">返回顶部</span> ↑</a></footer>
+    <footer class="site-footer"><span data-i18n="footer.copyright">© 2026 zhengguangzhuo</span><span data-i18n="footer.tagline">AI Systems · Agent Engineering · Open Source</span><span class="footer-links"><a href="https://github.com/zhengguangzhuo" target="_blank" rel="noreferrer" data-i18n="footer.github">GitHub ↗</a><a href="mailto:1150430503@qq.com" data-i18n="footer.email">Email ↗</a><a href="#top"><span data-i18n="footer.backToTop">返回顶部</span> ↑</a></span></footer>
   </div>
-  <script src="script.js?v=20260929-2"></script>
+  <script src="script.js?v=20260929-3"></script>
 </body>
 </html>
